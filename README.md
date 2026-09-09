@@ -22,6 +22,12 @@
 - **Check completed work and next steps:** [N4K48 roadmap](https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md).
 - **Explore the visual identity:** [N4K48 profile](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/N4K48.md).
 
+## N4K48 × MyZubster — Comic series
+
+Three AI-assisted comic pages tell my journey from a software idea to development and the future vision of Neon Plaza.
+
+[**Read the three comic pages**](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/tree/main/docs/n4k48-comics) · [Project progress](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/n4k48-comics/ROADMAP.md)
+
 ## About N4K48
 
 I am building **N4K48**, a public technical and creative identity connected to the MyZubster ecosystem.
