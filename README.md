@@ -15,6 +15,13 @@
   <a href="https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md">Public roadmap</a>
 </p>
 
+## Start here
+
+- **Explore the product idea:** [N4K48 Project Planner AI/Zorgax](https://github.com/nicolaususnicola-lgtm/myzubster-mvp#n4k48-project-planner-aizorgax).
+- **Run the technical MVP locally:** [Docker quick start](https://github.com/nicolaususnicola-lgtm/myzubster-mvp#avvio-rapido-con-docker).
+- **Check completed work and next steps:** [N4K48 roadmap](https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md).
+- **Explore the visual identity:** [N4K48 profile](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/N4K48.md).
+
 ## About N4K48
 
 I am building **N4K48**, a public technical and creative identity connected to the MyZubster ecosystem.
@@ -31,7 +38,7 @@ The current seven-day test asks:
 - ✅ JWT-based authentication
 - ✅ Clear separation between guests and authenticated accounts
 - ✅ Authenticated join flow for Neon Plaza
-- ✅ 4 automated test suites and 22 tests passed locally
+- ✅ [4 automated test suites and 22 tests passed locally on September 3, 2026](https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md#ultima-verifica-automatica)
 - ✅ Public N4K48 documentation and roadmap
 - ✅ GitHub profile and visual identity published
 - ✅ First public article published on DEV Community
