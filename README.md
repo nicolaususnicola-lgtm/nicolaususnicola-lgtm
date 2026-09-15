@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/N4K48-GitHub-Profile-Banner.png" alt="N4K48 — Building with MyZubster" width="100%">
+  <img src="./assets/MyZubster_Profilo_N4K48.png" alt="N4K48 — MyZubster profile" width="100%">
 </p>
 
 <h1 align="center">N4K48</h1>
