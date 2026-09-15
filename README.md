@@ -5,7 +5,7 @@
 <h1 align="center">N4K48</h1>
 
 <p align="center">
-  Open-source builder · AI-assisted product planning · MyZubster · Neon Plaza
+  Open-source builder · AI-assisted product planning · MyZubster · Zorgax · Nicola Comics · Neon Plaza
 </p>
 
 <p align="center">
@@ -15,41 +15,86 @@
   <a href="https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md">Public roadmap</a>
 </p>
 
+## What I am building now
+
+I am connecting the **N4K48 / Nicola Comics pilot** to the wider **MyZubster + Zorgax** ecosystem.
+
+The current pilot exposes a small, read-only comics catalog through an API. Zorgax can request the gallery, inspect a comic, identify the NFT candidate and explain the next verification steps without performing minting, wallet operations, payments or catalog mutations.
+
+The integration is intentionally evidence-first: a comic is never described as minted unless verifiable on-chain proof exists, and rights remain `TO_VERIFY` until they are actually verified.
+
 ## Start here
 
-- **Explore the product idea:** [N4K48 Project Planner AI/Zorgax](https://github.com/nicolaususnicola-lgtm/myzubster-mvp#n4k48-project-planner-aizorgax).
-- **Run the technical MVP locally:** [Docker quick start](https://github.com/nicolaususnicola-lgtm/myzubster-mvp#avvio-rapido-con-docker).
-- **Check completed work and next steps:** [N4K48 roadmap](https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md).
+- **Explore the technical MVP:** [N4K48 Project Planner AI/Zorgax](https://github.com/nicolaususnicola-lgtm/myzubster-mvp#n4k48-project-planner-aizorgax).
+- **Run the MVP locally:** [Docker quick start](https://github.com/nicolaususnicola-lgtm/myzubster-mvp#avvio-rapido-con-docker).
+- **Follow the Metaverse roadmap:** [N4K48 roadmap](https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md).
 - **Explore the visual identity:** [N4K48 profile](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/N4K48.md).
+- **Follow the comics pilot:** [Nicola Comics roadmap](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/n4k48-comics/ROADMAP.md).
 
-## N4K48 × MyZubster — Comic series
+## N4K48 × MyZubster — Nicola Comics
 
-Three AI-assisted comic pages tell my journey from a software idea to development and the future vision of Neon Plaza.
+Three AI-assisted comic pages tell the journey from a software idea to development and the future vision of Neon Plaza:
 
-[**Read the three comic pages**](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/tree/main/docs/n4k48-comics) · [Project progress](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/n4k48-comics/ROADMAP.md)
+1. **Dall'idea software al metaverso** — current NFT candidate.
+2. **Il software prende forma**.
+3. **Verso Neon Plaza**.
 
-## About N4K48
+The first comic is currently `NFT_CANDIDATE` / `PROPOSED_FOR_REVIEW`. Rights are still `TO_VERIFY`; contract address, token ID and transaction hash remain empty until a real verified mint exists.
 
-I am building **N4K48**, a public technical and creative identity connected to the MyZubster ecosystem.
+[**Read the comic pages**](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/tree/main/docs/n4k48-comics) · [Pilot roadmap](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/n4k48-comics/ROADMAP.md) · [Zorgax adapter documentation](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/nicola-comics/ZORGAX.md)
 
-My current focus is the **N4K48 Project Planner AI/Zorgax**: an experimental assistant designed to help people define one objective, organize the work, identify missing steps and move a digital product toward publication.
+## Nicola Comics × Zorgax adapter
 
-The current seven-day test asks:
+The pilot currently supports:
 
-> Can an AI-guided project planner help someone produce a concrete and verifiable result within seven days?
+- `GET /api/comics` — public catalog.
+- `GET /api/comics/{comic_id}` — comic detail/card.
+- `POST /api/zorgax/ask` — read-only Zorgax adapter.
+- Actions: `gallery`, `detail`, `candidate`, `next_steps`.
+- Configurable public base URL through `NICOLA_COMICS_BASE_URL`.
+- Docker propagation of the base URL without hardcoding a local PC address.
+
+The local happy path has been manually verified with the Docker API healthy: gallery, detail, candidate and next-steps responses work as expected. The configurable base URL was also verified through Docker using a test URL, producing absolute comic detail URLs correctly.
+
+The current environment does **not** contain `pytest`, so the automated comics test suite has not been rerun in the latest validation session. Historical test results are documented separately; current claims are limited to what was actually rechecked.
+
+## Current integration milestone
+
+Coordination with the public MyZubster project is tracked in **MyZubster-Ecosystem/myzubster issue #1176**.
+
+The target public end-to-end flow is:
+
+```text
+Zorgax request
+   ↓
+Nicola Comics gallery
+   ↓
+Comic detail/card + image
+   ↓
+NFT candidate
+   ↓
+Rights verification
+   ↓
+Verified on-chain data only when it really exists
+```
+
+The pilot must be hosted on a public HTTPS endpoint separately from the local PC. Authentication secrets, if required by the public integration, belong in the hosting environment and must never be committed to the repository.
 
 ## Verified progress
 
 - ✅ Persistent N4K48 character profile
-- ✅ JWT-based authentication
-- ✅ Clear separation between guests and authenticated accounts
-- ✅ Authenticated join flow for Neon Plaza
-- ✅ [4 automated test suites and 22 tests passed locally on September 3, 2026](https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md#ultima-verifica-automatica)
-- ✅ Public N4K48 documentation and roadmap
-- ✅ GitHub profile and visual identity published
-- ✅ First public article published on DEV Community
-- 🧪 Seven-day Project Planner test in progress
-- 🚧 Next: GitHub OAuth, multiuser testing, security review and staging
+- ✅ JWT-based authentication and authenticated Neon Plaza join flow
+- ✅ Existing Metaverse automated verification: 4 suites / 22 tests passed locally on September 3, 2026
+- ✅ Public N4K48 documentation, profile and visual identity
+- ✅ Nicola Comics catalog with three comic entries
+- ✅ `n4k48-comic-001` selected as NFT candidate without claiming a mint
+- ✅ Read-only Zorgax adapter implemented
+- ✅ Local Docker happy path manually verified
+- ✅ Configurable `NICOLA_COMICS_BASE_URL` implemented and verified through Docker
+- ✅ Public integration coordination opened as issue #1176
+- 🚧 Public HTTPS deployment of the Nicola Comics pilot
+- 🚧 Public Zorgax → pilot end-to-end integration
+- 🚧 Rights verification and eventual on-chain proof
 
 ## Featured projects
 
@@ -61,15 +106,9 @@ An experimental AI-guided project planner for turning one objective into clear a
 
 The public development fork containing the persistent N4K48 profile, JWT authentication, authenticated Neon Plaza flow, automated tests and project roadmap.
 
-### [MyZubster MVP](https://github.com/nicolaususnicola-lgtm/myzubster-mvp)
+### [MyZubster MVP / Nicola Comics pilot](https://github.com/nicolaususnicola-lgtm/myzubster-mvp)
 
-A smaller technical MVP exploring observation APIs, JSON persistence, Docker, local AI with Ollama, Qdrant and retrieval-augmented generation.
-
-## Latest article
-
-[**Building N4K48: My Journey with MyZubster, AI and Neon Plaza**](https://dev.to/n4k48/building-n4k48-my-journey-with-myzubster-ai-and-neon-plaza-3nbp)
-
-I share what has been implemented, what has been tested and what still needs validation.
+The technical MVP now includes the read-only Nicola Comics API and Zorgax adapter alongside Docker, observation APIs, local AI experiments with Ollama, Qdrant and retrieval-augmented generation.
 
 ## Working principles
 
@@ -81,4 +120,4 @@ Visuals and storytelling explain the direction. Code, tests, commits and evidenc
 
 ---
 
-The projects shown here are experimental and under development. Public documentation, visuals and local test results do not by themselves demonstrate production deployment, commercial adoption, payment, partnership or third-party endorsement.
+The projects shown here are experimental and under development. Public documentation, visuals and local test results do not by themselves demonstrate production deployment, commercial adoption, payment, partnership, verified intellectual-property rights or on-chain minting. Those claims are made only when supporting evidence exists.
