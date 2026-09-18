@@ -15,6 +15,22 @@
   <a href="https://github.com/nicolaususnicola-lgtm/myzubster/blob/main/ROADMAP_N4K48_METAVERSE.md">Public roadmap</a>
 </p>
 
+## Servizi a Rimini — traslochi, autista e condivisione di competenze
+
+Oltre allo sviluppo di MyZubster, metto a disposizione le mie capacità pratiche per servizi a pagamento e scambio di conoscenze.
+
+- **Piccoli traslochi e trasporto di oggetti ingombranti:** possiedo un pickup con gancio traino, disponibile per trasporti compatibili con le caratteristiche e la capacità del mezzo.
+- **Disponibilità come autista:** sono munito di **patenti B, C, CE e CQC merci**. Posso valutare incarichi di guida anche quando il cliente dispone già di un camion o di un mezzo adatto al trasloco.
+- **Condivisione di conoscenze pratiche:** offro sessioni concordate per condividere la mia esperienza di autista, la preparazione di un trasloco e l'organizzazione pratica del trasporto. Si tratta di condivisione di esperienza, non di corsi abilitanti o rilascio di patenti e certificazioni.
+
+**Zona:** Rimini e dintorni; altre destinazioni da concordare.  
+**Disponibilità e preventivo:** da concordare in base a percorso, durata, oggetti da trasportare e mezzo utilizzato. Le sessioni di condivisione delle competenze possono essere concordate separatamente dal servizio di trasporto.
+
+Per una richiesta, indica partenza, destinazione, data, oggetti da trasportare, disponibilità di un mezzo oppure l'argomento che vuoi approfondire.
+
+**Contatto:** [nicolaususnicola@gmail.com](mailto:nicolaususnicola@gmail.com).  
+Il [Marketplace MyZubster](https://www.myzubster.com/marketplace) è il canale previsto per presentare questi servizi; il link al singolo annuncio sarà aggiunto quando disponibile.
+
 ## What I am building now
 
 I am connecting the **N4K48 / Nicola Comics pilot** to the wider **MyZubster + Zorgax** ecosystem.
