@@ -17,19 +17,29 @@
 
 ## Servizi a Rimini — traslochi, autista e condivisione di competenze
 
-Oltre allo sviluppo di MyZubster, metto a disposizione le mie capacità pratiche per servizi a pagamento e scambio di conoscenze.
+I miei due servizi sono pubblicati sul **[Marketplace MyZubster](https://www.myzubster.com/marketplace)**. Sono munito di **patenti B, C, CE e CQC merci** e possiedo un **pickup con gancio traino**.
 
-- **Piccoli traslochi e trasporto di oggetti ingombranti:** possiedo un pickup con gancio traino, disponibile per trasporti compatibili con le caratteristiche e la capacità del mezzo.
-- **Disponibilità come autista:** sono munito di **patenti B, C, CE e CQC merci**. Posso valutare incarichi di guida anche quando il cliente dispone già di un camion o di un mezzo adatto al trasloco.
-- **Condivisione di conoscenze pratiche:** offro sessioni concordate per condividere la mia esperienza di autista, la preparazione di un trasloco e l'organizzazione pratica del trasporto. Si tratta di condivisione di esperienza, non di corsi abilitanti o rilascio di patenti e certificazioni.
+### Traslochi e trasporto ingombranti — pickup e autista disponibile
 
-**Zona:** Rimini e dintorni; altre destinazioni da concordare.  
-**Disponibilità e preventivo:** da concordare in base a percorso, durata, oggetti da trasportare e mezzo utilizzato. Le sessioni di condivisione delle competenze possono essere concordate separatamente dal servizio di trasporto.
+Piccoli traslochi e trasporto di mobili e oggetti ingombranti a Rimini e dintorni, compatibilmente con la capacità del mezzo. Sono disponibile anche come autista quando il cliente dispone già di un camion o di un mezzo adatto.
 
-Per una richiesta, indica partenza, destinazione, data, oggetti da trasportare, disponibilità di un mezzo oppure l'argomento che vuoi approfondire.
+**Tariffa indicativa autista: 20 €/ora.** Utilizzo del mio pickup, carburante, pedaggi ed eventuale rimorchio sono da concordare prima del servizio.
 
-**Contatto:** [nicolaususnicola@gmail.com](mailto:nicolaususnicola@gmail.com).  
-Il [Marketplace MyZubster](https://www.myzubster.com/marketplace) è il canale previsto per presentare questi servizi; il link al singolo annuncio sarà aggiunto quando disponibile.
+[**Apri il Marketplace per richiedere il servizio traslochi**](https://www.myzubster.com/marketplace) — categoria `services`; cerca il titolo riportato sopra e premi **Richiedi**.
+
+### Conoscenze pratiche da autista — patenti B, C, CE e CQC merci
+
+Sessioni individuali per condividere la mia esperienza pratica: organizzazione di un trasloco, preparazione di un trasporto e aspetti pratici dell'attività di autista. Gli argomenti vengono concordati in base alle tue esigenze.
+
+**Prezzo: 20 € per una sessione di un'ora.** A Rimini, su appuntamento. Il servizio non comprende corsi abilitanti, rilascio o rinnovo di patenti/CQC né lezioni pratiche di guida. Trasporto e incarichi come autista sono servizi separati.
+
+[**Apri il Marketplace per richiedere una sessione di conoscenza**](https://www.myzubster.com/marketplace) — categoria `knowledge`; cerca il titolo riportato sopra e premi **Richiedi**.
+
+I collegamenti aprono il Marketplace: al momento le schede non espongono un link diretto al singolo annuncio.
+
+Per i traslochi indica partenza, destinazione, data, oggetti e disponibilità di un mezzo; per le sessioni indica l'argomento e la tua disponibilità.
+
+**Contatto:** [nicolaususnicola@gmail.com](mailto:nicolaususnicola@gmail.com).
 
 ## What I am building now
 
