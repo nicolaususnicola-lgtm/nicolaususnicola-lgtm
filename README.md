@@ -41,6 +41,43 @@ Per i traslochi indica partenza, destinazione, data, oggetti e disponibilità di
 
 **Contatto:** [nicolaususnicola@gmail.com](mailto:nicolaususnicola@gmail.com).
 
+## Il mio percorso con Daniel Ioni — kefir, Docker e Zorgax
+
+Il mio percorso collega servizi pratici, apprendimento tecnico e il pilot **Kefir & Knowledge / KF-006**.
+
+**[Leggi il percorso completo e le visual](docs/percorso-daniel-kefir-zorgax.md)** · [MyZubster e mentorship](https://github.com/MyZubster-Ecosystem/myzubster/blob/main/docs/KNOWLEDGE-MENTORSHIP-PILOTS.md) · [Il mio fork di sviluppo](https://github.com/nicolaususnicola-lgtm/myzubster)
+
+La documentazione ufficiale collega il mio pilot al repository **[Nicola di Daniel Ioni](https://github.com/DanielIoni-creator/Nicola)**. Al controllo del 18 settembre 2026 quel collegamento restituisce 404 anche dal browser: resta un riferimento documentato da ripristinare o aggiornare, non un'integrazione verificata.
+
+### Kefir — dal passaggio reale alla ricerca
+
+![Visual dimostrativa kefir della community MyZubster](https://raw.githubusercontent.com/MyZubster-Ecosystem/myzubster/main/frontend/public/images/marketplace/demo/produce-kefir.png)
+
+*Illustrazione dimostrativa del progetto originale MyZubster; non raffigura il nostro campione e non costituisce un risultato scientifico.*
+
+```mermaid
+flowchart LR
+    A["Scambio kefir"] --> B["Conferme e record"]
+    B --> C["Osservazioni documentate"]
+    C --> D["Protocollo da definire"]
+    D --> E["Dati e revisione scientifica"]
+```
+
+Lo schema mostra il percorso previsto. La registrazione finale del passaggio e risultati scientifici non sono attestati qui. [Esplora KF-006](https://www.myzubster.com/knowledge-kf-006.html).
+
+### Le competenze maturate nel progetto
+
+```mermaid
+flowchart LR
+    A["GitHub: versionare"] --> B["Docker: avviare"]
+    B --> C["API: verificare"]
+    C --> D["Zorgax: organizzare conoscenza"]
+    D --> E["MyZubster: provare servizi"]
+    E --> F["Documentare e condividere"]
+```
+
+Ho imparato a verificare lo stato dei container, provare le API del catalogo, riportare errori riproducibili e pubblicare servizi con descrizioni e prezzi chiari. Daniel ha contribuito al confronto e al coordinamento del percorso; l'assistenza AI ha supportato testi, codice e documentazione. Nel [diario del percorso](docs/percorso-daniel-kefir-zorgax.md) distinguo attività svolte, contributi e verifiche ancora necessarie.
+
 ## What I am building now
 
 I am connecting the **N4K48 / Nicola Comics pilot** to the wider **MyZubster + Zorgax** ecosystem.
