@@ -123,6 +123,14 @@ Public API, Docker deployment, Zorgax adapter, automated verification and the Ni
 
 Development work around the N4K48 profile, MyZubster experiments, authentication, Neon Plaza and project documentation.
 
+## 🧠 MyZubster Conoscenze
+
+Public knowledge cards documenting declared activities, practical experience and supporting evidence:
+
+- [Prove Docker e chat AI del progetto myzubster-mvp](https://www.myzubster.com/knowledge-card?id=6abaaefb3a7460c4574a45fd) — Docker, local AI/RAG testing, Qdrant ingestion and linked GitHub evidence.
+- [Apprendimento e collaborazione nel percorso MyZubster](https://www.myzubster.com/knowledge-card?id=6abaaf563a7460c4574a4623) — learning, collaboration and documented contributions in the MyZubster path.
+- [Autista di camion e organizzazione dei trasporti](https://www.myzubster.com/knowledge-card?id=6abaae353a7460c4574a4597) — declared practical transport experience, kept separate from professional-document verification.
+
 ## 🌐 Follow the build
 
 - [Public Nico Comics demo](https://myzubster-mvp.onrender.com)
