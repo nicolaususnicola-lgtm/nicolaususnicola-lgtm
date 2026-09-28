@@ -26,6 +26,25 @@ OBSERVE → DOCUMENT → BUILD → TEST → VERIFY → PUBLISH
 
 I try to keep public claims evidence-first: a feature is described as working when it has been tested, and blockchain/NFT claims are made only when verifiable on-chain evidence exists.
 
+## 🚚 Competenze pratiche e servizi da autista
+
+Sono Nicola, **N4K48**: affianco l'esperienza pratica nella guida di camion al percorso di apprendimento e contribuzione software con MyZubster.
+
+- Guida di camion e disponibilità come autista.
+- Patenti dichiarate: **B, C, CE e CQC merci**.
+- Organizzazione di piccoli traslochi, preparazione dei trasporti e trasporto di ingombranti.
+- Disponibilità di pickup con gancio traino.
+
+Ho pubblicato nel [Marketplace MyZubster](https://www.myzubster.com/marketplace) i servizi **“Traslochi e trasporto ingombranti — pickup e autista disponibile”** e **“Conoscenze pratiche da autista — patenti B, C, CE e CQC merci”**. Le sessioni di conoscenze pratiche riguardano l'organizzazione e la preparazione dei trasporti; non sono corsi abilitanti o lezioni di guida. Disponibilità e condizioni dei servizi vanno concordate.
+
+## 🤝 Il percorso con Daniel Ioni
+
+Nel percorso MyZubster con **Daniel Ioni**, contribuisco attraverso prove pratiche del software, segnalazioni di errori e documentazione dei risultati, con supporto AI.
+
+Il progetto [myzubster-mvp](https://github.com/nicolaususnicola-lgtm/myzubster-mvp) collega osservazioni collaborative, verifica di evidenze e il pilot Nico Comics. Le prove locali documentate del **18 settembre 2026** comprendevano un ambiente Docker con API, Open WebUI, Qdrant e Ollama, con i modelli Mistral e nomic-embed-text. La chat AI locale aveva risposto e il catalogo conteneva tre fumetti.
+
+Questo descrive un percorso concreto di apprendimento e contribuzione: le competenze da autista e le attività software sono presentate separatamente, senza attribuire certificazioni informatiche o anni di esperienza non documentati. I risultati dei test locali sono distinti dai progressi della demo pubblica descritti qui sotto.
+
 ## 🚀 What I'm building now
 
 ### Nico Comics × MyZubster
