@@ -107,11 +107,49 @@ The first three AI-assisted N4K48 comic boards are:
 [Read the roadmap](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/n4k48-comics/ROADMAP.md) ·
 [Zorgax adapter docs](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/docs/nicola-comics/ZORGAX.md)
 
+## 🔐 Latest knowledge — verifiable Knowledge Cards
+
+With **Zorgax** and the MyZubster Conoscenze workflow, I'm now testing how a personal knowledge profile can connect what I learn and build to concrete, independently inspectable evidence.
+
+The latest proof-of-concept follows this path:
+
+```text
+N4K48 → Knowledge Card → GitHub evidence → canonical payload
+      → SHA-256 → Ethereum Sepolia Proof v2 → Knowledge Graph
+```
+
+For the Knowledge Card **“Prove Docker e chat AI del progetto myzubster-mvp”**, the exact committed payload is linked to SHA-256:
+
+```text
+6097e05866bafceec24663d2638cb1dae5742ac78284abbfd45cc9c3b0bfb845
+```
+
+That digest is compared with `knowledgeHash()` in the public Proof v2 contract on Ethereum Sepolia. The repository now includes a repeatable **Knowledge Proof Verifier** developed through MYZ-213: it hashes the exact payload bytes, performs read-only Sepolia RPC calls, distinguishes `MATCH`, `NO_MATCH` and verification errors, and is covered by GitHub Actions tests.
+
+- [Knowledge Card](https://www.myzubster.com/knowledge-card?id=6abaaefb3a7460c4574a45fd)
+- [Knowledge Proof Verifier — merged PR #16](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/pull/16)
+- [Proof v2 documentation](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/proofs/SEPOLIA_PROOF_V2.md)
+- [Proof v2 contract on Ethereum Sepolia](https://sepolia.etherscan.io/address/0x21787249Df054132093FcF09bB914C0CCC539390)
+
+This is an **integrity and provenance experiment**: a matching proof links specific payload bytes to the public on-chain digest. It does not automatically certify that every statement or skill in the Knowledge Card is true.
+
+### What I'm learning and testing now
+
+- Local AI/RAG workflows with **Ollama, Qdrant and Open WebUI**
+- Knowledge ingestion, chunking and retrieval testing
+- Python/Flask APIs and automated verification
+- Docker-based development environments
+- GitHub evidence, pull requests and CI
+- SHA-256 content integrity and reproducible verification
+- Public read-only Ethereum Sepolia contract verification
+- Evidence-first Knowledge Cards and navigable Knowledge Graphs
+- AI-assisted development with tests and public artifacts as the source of truth
+
 ## 🛠 Tech & workflow
 
-`GitHub` · `Docker` · `Python` · `Flask` · `REST APIs` · `GitHub Actions` · `Render` · `AI-assisted development`
+`GitHub` · `Docker` · `Python` · `Flask` · `REST APIs` · `GitHub Actions` · `Render` · `Ollama` · `Qdrant` · `Ethereum Sepolia` · `SHA-256` · `AI-assisted development`
 
-I use AI as a development and documentation assistant while keeping tests, commits, API responses and deployment evidence as the source of truth.
+I use AI and Zorgax-style workflows as development and documentation assistants while keeping tests, commits, API responses, exact payloads and public verification evidence as the source of truth.
 
 ## 📌 Featured work
 
