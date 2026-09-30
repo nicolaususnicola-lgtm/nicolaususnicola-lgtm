@@ -180,7 +180,13 @@ Development work around the N4K48 profile, MyZubster experiments, authentication
 
 ## 🧠 MyZubster Conoscenze
 
-Public knowledge cards documenting declared activities, practical experience and supporting evidence:
+Public knowledge cards documenting declared activities, practical experience and supporting evidence.
+
+### 🔗 View my MyZubster Knowledge Graph
+
+[**Open N4K48 Knowledge Graph →**](https://myzubster-knowledge-myzubster.vercel.app/conoscenze?card=6abaaefb3a7460c4574a45fd)
+
+The graph connects my N4K48 profile to the software Knowledge Card and its currently represented evidence. It is an experimental MyZubster view; evidence synchronization is still being tested.
 
 - [Prove Docker e chat AI del progetto myzubster-mvp](https://www.myzubster.com/knowledge-card?id=6abaaefb3a7460c4574a45fd) — Docker, local AI/RAG testing, Qdrant ingestion and linked GitHub evidence.
 - [Apprendimento e collaborazione nel percorso MyZubster](https://www.myzubster.com/knowledge-card?id=6abaaf563a7460c4574a4623) — learning, collaboration and documented contributions in the MyZubster path.
