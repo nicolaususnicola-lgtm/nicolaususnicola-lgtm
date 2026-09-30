@@ -162,6 +162,40 @@ This is an **integrity and provenance experiment**: a matching proof links speci
 - Evidence-first Knowledge Cards and navigable Knowledge Graphs
 - AI-assisted development with tests and public artifacts as the source of truth
 
+## 🧩 Upstream contribution — MYZ-209
+
+On **30 September 2026** I completed an upstream contribution to the MyZubster Knowledge Graph focused on versioned proof visibility and evidence integrity.
+
+[PR #25 — MYZ-209: expose versioned Proof v3 in Knowledge Graph](https://github.com/danieldirimini-myzubster/myzubster/pull/25) was reviewed, verified on a Vercel preview, merged into `main`, and then checked again in production.
+
+The production **Proof** view for Knowledge Card `K-4A45FD` now exposes the proof history as distinct, navigable objects:
+
+```text
+Knowledge Card K-4A45FD
+        ├── Proof v2
+        ├── SHA-256 payload digest
+        └── Proof v3
+```
+
+The work included:
+
+- structured/fallback classification of versioned proof evidence;
+- coexistence of Proof v2 and Proof v3 without rewriting the v2 history;
+- grouping proof metadata separately from normal source evidence;
+- deduplication so proof URLs do not also appear as duplicate raw `SRC-*` nodes in the Proof filter;
+- stable evidence IDs across refresh/reimport;
+- tests covering proof filtering, v2/v3 coexistence and deduplication;
+- a final graph-edge fix connecting **K-4A45FD → Proof v3**;
+- preview verification followed by a production check after merge.
+
+Merge commit:
+
+```text
+157fc5edf7440a732c489a918efe6be8e34888c3
+```
+
+This contribution was also confirmed by the maintainer for a **250 MYZ internal reward** attributed to N4K48 / `nicolaususnicola-lgtm`. MYZ is currently an internal MyZubster reward/accounting unit, not an on-chain token or fiat-equivalent payment. A ledger reference (`MYZ-LEDGER-000002`) was communicated by the maintainer, but I have not yet independently located that entry in the public repository, so I do **not** present the ledger record as publicly verified yet.
+
 ## 🛠 Tech & workflow
 
 `GitHub` · `Docker` · `Python` · `Flask` · `REST APIs` · `GitHub Actions` · `Render` · `Ollama` · `Qdrant` · `Ethereum Sepolia` · `SHA-256` · `AI-assisted development`
