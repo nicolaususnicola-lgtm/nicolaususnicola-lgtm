@@ -109,29 +109,46 @@ The first three AI-assisted N4K48 comic boards are:
 
 ## 🔐 Latest knowledge — verifiable Knowledge Cards
 
-With **Zorgax** and the MyZubster Conoscenze workflow, I'm now testing how a personal knowledge profile can connect what I learn and build to concrete, independently inspectable evidence.
+With **Zorgax** and the MyZubster Conoscenze workflow, I'm testing how a personal knowledge profile can connect what I learn and build to concrete, independently inspectable evidence.
 
-The latest proof-of-concept follows this path:
+The current proof-of-concept follows this path:
 
 ```text
 N4K48 → Knowledge Card → GitHub evidence → canonical payload
-      → SHA-256 → Ethereum Sepolia Proof v2 → Knowledge Graph
+      → SHA-256 → Ethereum Sepolia proof → Knowledge Graph
 ```
 
-For the Knowledge Card **“Prove Docker e chat AI del progetto myzubster-mvp”**, the exact committed payload is linked to SHA-256:
+### Proof v3 — latest verified state
+
+For the Knowledge Card **“Prove Docker e chat AI del progetto myzubster-mvp”**, the latest committed v3 payload contains **5083 exact bytes** and has SHA-256:
+
+```text
+d1c89d2a4157a159b56e92825ca59fdb1f0e84e003b05e022af67da69ed25ac4
+```
+
+That exact digest was independently reproduced locally and then compared with `knowledgeHash()` read publicly from the v3 contract on Ethereum Sepolia. The MYZ-213 Knowledge Proof Verifier returned **MATCH** for the payload digest, calculated bytes32, on-chain bytes32 and expected bytes32.
+
+- [Knowledge Card](https://www.myzubster.com/knowledge-card?id=6abaaefb3a7460c4574a45fd)
+- [Knowledge Proof Verifier — merged PR #16](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/pull/16)
+- [Proof v3 documentation](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/proofs/SEPOLIA_PROOF_V3.md)
+- [Proof v3 canonical payload](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/proofs/knowledge-card-6abaaefb3a7460c4574a45fd-v3.json)
+- [Proof v3 contract on Ethereum Sepolia](https://sepolia.etherscan.io/address/0x3233fA7f8c50Aa25d9B1263c25F28535B6eA59bF)
+- [Proof v3 deploy transaction](https://sepolia.etherscan.io/tx/0x5c7717be6dc70e6416f8053c72bb1e2bec2b7c5462b23fcb9c4b1077f907fed4)
+
+The v3 deployment was confirmed successfully on Sepolia. The proof contract stores the digest of this specific committed payload version; later edits to the live Knowledge Card are not retroactively covered by that digest.
+
+### Proof v2 — previous reproducible milestone
+
+Proof v2 remains part of the public history. Its canonical payload digest is:
 
 ```text
 6097e05866bafceec24663d2638cb1dae5742ac78284abbfd45cc9c3b0bfb845
 ```
 
-That digest is compared with `knowledgeHash()` in the public Proof v2 contract on Ethereum Sepolia. The repository now includes a repeatable **Knowledge Proof Verifier** developed through MYZ-213: it hashes the exact payload bytes, performs read-only Sepolia RPC calls, distinguishes `MATCH`, `NO_MATCH` and verification errors, and is covered by GitHub Actions tests.
-
-- [Knowledge Card](https://www.myzubster.com/knowledge-card?id=6abaaefb3a7460c4574a45fd)
-- [Knowledge Proof Verifier — merged PR #16](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/pull/16)
 - [Proof v2 documentation](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/blob/main/proofs/SEPOLIA_PROOF_V2.md)
 - [Proof v2 contract on Ethereum Sepolia](https://sepolia.etherscan.io/address/0x21787249Df054132093FcF09bB914C0CCC539390)
 
-This is an **integrity and provenance experiment**: a matching proof links specific payload bytes to the public on-chain digest. It does not automatically certify that every statement or skill in the Knowledge Card is true.
+This is an **integrity and provenance experiment**: a matching proof links specific payload bytes to a public on-chain digest. It does not automatically certify that every statement, identity claim or skill in the Knowledge Card is true.
 
 ### What I'm learning and testing now
 
