@@ -45,6 +45,46 @@ Il progetto [myzubster-mvp](https://github.com/nicolaususnicola-lgtm/myzubster-m
 
 Questo descrive un percorso concreto di apprendimento e contribuzione: le competenze da autista e le attività software sono presentate separatamente, senza attribuire certificazioni informatiche o anni di esperienza non documentati. I risultati dei test locali sono distinti dai progressi della demo pubblica descritti qui sotto.
 
+## 🧭 From Comics to Evidence-First AI — October 2026
+
+N4K48 started as a visual narrative: comic boards exploring the path from a software idea toward the MyZubster metaverse. The current engineering checkpoint turns part of that narrative into a locally tested **evidence-first AI/RAG workflow**.
+
+The tested path is:
+
+```text
+Open WebUI
+   ↓
+OpenAI-compatible MyZubster API
+   ↓
+Exact / semantic evidence retrieval
+   ↓
+Qdrant + persisted observations
+   ↓
+Authoritative answer when evidence is sufficient
+   ↓
+Ollama only when generation is needed
+```
+
+Recent verified work on `pilot/n4k48-tested-checkpoint` includes:
+
+- an OpenAI-compatible `/v1/chat/completions` interface for `myzubster-rag`;
+- explicit observation-index recovery from persisted data;
+- exact observation-ID retrieval before semantic search;
+- safe handling of syntactically valid but unknown observation IDs, without substituting semantically similar evidence;
+- deterministic no-source responses;
+- verbatim authoritative descriptions when the retrieved evidence already contains the requested fact;
+- end-to-end local checks through Open WebUI, the API, Qdrant and Ollama.
+
+Key checkpoints: `b3399fb` → `16f0800` → `d1aa48f` → `8106276` → `87a1021`.
+
+The architectural principle is becoming clearer: **retrieval is not the same as truth, and generation should not overwrite authoritative evidence.**
+
+This work also keeps the decentralization boundary explicit. Local AI, identifiers, hashes and an internal ledger do not by themselves make MyZubster decentralized. The longer-term direction is to make selected evidence independently verifiable through provenance, reproducible hashes and external attestations, while clearly separating application records from actual on-chain proofs.
+
+> **Status boundary:** this is an MVP / tested development checkpoint, not a claim that MyZubster is fully decentralized or production-ready.
+
+[Explore the tested checkpoint →](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/tree/pilot/n4k48-tested-checkpoint)
+
 ## 🚀 What I'm building now
 
 ### Nico Comics × MyZubster
