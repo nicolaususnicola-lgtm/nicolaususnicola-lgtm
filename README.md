@@ -85,6 +85,31 @@ This work also keeps the decentralization boundary explicit. Local AI, identifie
 
 [Explore the tested checkpoint →](https://github.com/nicolaususnicola-lgtm/myzubster-mvp/tree/pilot/n4k48-tested-checkpoint)
 
+## 🌐 Live VPS ↔ N4K48 interoperability — TESTED
+
+On **7 October 2026**, the first controlled live interoperability checkpoint between the MyZubster VPS and my contributor-controlled N4K48 Docker environment completed with **PASS**.
+
+The tested path was:
+
+```text
+MyZubster VPS → authenticated HTTPS broker → N4K48 Docker agent
+              → local MyZubster catalog → result returned to Bridge
+```
+
+Observed evidence:
+
+- the broker accepted the controlled `gallery` job;
+- the remote N4K48 agent processed it from my independently controlled environment;
+- the result returned to the broker with `state: done`;
+- all four catalog titles were returned;
+- repeated reads remained consistent during the job TTL;
+- after TTL expiry the broker correctly returned `{"error":"expired"}`;
+- the tested agent SHA-256 was `75ab34d21f668fa48383ac7070c717b074c868694c3042928e4532b5ccd34fa1`.
+
+The upstream checkpoint is publicly recorded in [MyZubster PR #1545](https://github.com/MyZubster-Ecosystem/myzubster/pull/1545#issuecomment-6041485188).
+
+**Evidence state: TESTED** for this bounded interoperability path. This demonstrates communication between independently administered environments; it does **not** claim complete decentralization, direct P2P networking or production/security certification.
+
 ## 🚀 What I'm building now
 
 ### Nico Comics × MyZubster
