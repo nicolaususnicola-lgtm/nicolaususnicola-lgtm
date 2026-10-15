@@ -2,17 +2,32 @@
   <img src="./assets/MyZubster_Profilo_N4K48.png" alt="N4K48 — MyZubster profile" width="100%">
 </p>
 
-<h1 align="center">N4K48</h1>
+<h1 align="center">Nicola Lorenzini · N4K48</h1>
 
 <p align="center">
-  Building verifiable experiments across AI, APIs, digital identity, comics and MyZubster.
+  <strong>Software Developer &amp; MyZubster Contributor</strong><br>
+  Building and testing secure software, evidence-first AI workflows and decentralized infrastructure.
 </p>
 
 <p align="center">
   <a href="https://www.myzubster.com">MyZubster</a> ·
+  <a href="https://github.com/MyZubster-Ecosystem/myzubster">MyZubster Ecosystem</a> ·
   <a href="https://github.com/nicolaususnicola-lgtm/myzubster-mvp">Nico Comics MVP</a> ·
   <a href="https://dev.to/n4k48">DEV Community</a>
 </p>
+
+## 🔐 MyZubster federation security — October 2026
+
+I contribute to the MyZubster federation security foundation with Daniel Ioni and the MyZubster ecosystem. The experimental work published to the dedicated feature branch includes:
+
+- Ed25519-signed evidence generation and verification;
+- evidence schema and timestamp validation;
+- MongoDB-backed nonce replay protection;
+- Jest tests covering signatures, validation and replay resistance.
+
+**Verified development checkpoint:** 28 Jest tests passed locally across three suites, and commit [`0de1cdd2`](https://github.com/MyZubster-Ecosystem/myzubster/commit/0de1cdd2) was pushed to [`feature/federation-security-foundation`](https://github.com/MyZubster-Ecosystem/myzubster/tree/feature/federation-security-foundation).
+
+**Status:** feature-branch security foundation under review; not a claim of a completed federated production deployment or a security audit.
 
 ## 👋 About me
 
