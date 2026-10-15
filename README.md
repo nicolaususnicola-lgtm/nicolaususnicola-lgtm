@@ -21,6 +21,16 @@
 
 My current public software pilot is [Nico Comics / MyZubster MVP](https://github.com/nicolaususnicola-lgtm/myzubster-mvp), where I document and test the software I am building. These projects are evolving prototypes; I distinguish tested functionality from future goals.
 
+## 💳 My independent software — N4K48 Pay Assistant
+
+[N4K48 Pay Assistant](https://github.com/nicolaususnicola-lgtm/n4k48-pay-assistant) is **my own independent software project**, developed with AI-assisted support from Zorgax. It aims to help individuals and small businesses understand payment activity, recurring costs, fees and transaction information.
+
+The planned MVP focuses on manually imported or simulated transaction data, an activity dashboard, AI-assisted explanations, reminders and transparent action logs.
+
+**Current status: Foundation / planning.** The roadmap features are not presented as already implemented. The project does not currently hold or transfer funds or provide payment processing. Any future regulated integrations will require appropriate providers and review.
+
+**Ownership boundary:** N4K48 Pay Assistant is independent from MyZubster. MyZubster could become an optional integration in the future, not the owner of this software.
+
 ## 🤝 What I'm building with Daniel Ioni — MyZubster
 
 Alongside my own N4K48 work, I collaborate with **Daniel Ioni** on **MyZubster** through practical software tests, technical documentation and contributions toward decentralized, federated infrastructure.
