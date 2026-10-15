@@ -1,33 +1,33 @@
 <p align="center">
-  <img src="./assets/MyZubster_Profilo_N4K48.png" alt="N4K48 — MyZubster profile" width="100%">
+  <img src="./assets/MyZubster_Profilo_N4K48.png" alt="N4K48 — software and experimental projects by Nicola Lorenzini" width="100%">
 </p>
 
 <h1 align="center">Nicola Lorenzini · N4K48</h1>
 
 <p align="center">
-  <strong>Software Developer &amp; MyZubster Contributor</strong><br>
-  Building and testing secure software, evidence-first AI workflows and decentralized infrastructure.
+  <strong>Creator of N4K48 | Software Projects &amp; Experimental Development</strong><br>
+  Building my own software experiments in AI, APIs, digital identity and comics — and collaborating with Daniel Ioni on MyZubster.
 </p>
 
 <p align="center">
-  <a href="https://www.myzubster.com">MyZubster</a> ·
-  <a href="https://github.com/MyZubster-Ecosystem/myzubster">MyZubster Ecosystem</a> ·
-  <a href="https://github.com/nicolaususnicola-lgtm/myzubster-mvp">Nico Comics MVP</a> ·
+  <a href="https://github.com/nicolaususnicola-lgtm/myzubster-mvp">My Software: N4K48 / Nico Comics MVP</a> ·
+  <a href="https://github.com/MyZubster-Ecosystem/myzubster">Collaboration: MyZubster</a> ·
   <a href="https://dev.to/n4k48">DEV Community</a>
 </p>
 
-## 🔐 MyZubster federation security — October 2026
+## 🚀 My software — N4K48
 
-I contribute to the MyZubster federation security foundation with Daniel Ioni and the MyZubster ecosystem. The experimental work published to the dedicated feature branch includes:
+**N4K48 is my personal software and experimental development path.** It brings together Nico Comics, AI-assisted tools, evidence-first AI/RAG workflows, API integrations, digital identity experiments and the longer-term Neon Plaza vision.
 
-- Ed25519-signed evidence generation and verification;
-- evidence schema and timestamp validation;
-- MongoDB-backed nonce replay protection;
-- Jest tests covering signatures, validation and replay resistance.
+My current public software pilot is [Nico Comics / MyZubster MVP](https://github.com/nicolaususnicola-lgtm/myzubster-mvp), where I document and test the software I am building. These projects are evolving prototypes; I distinguish tested functionality from future goals.
 
-**Verified development checkpoint:** 28 Jest tests passed locally across three suites, and commit [`0de1cdd2`](https://github.com/MyZubster-Ecosystem/myzubster/commit/0de1cdd2) was pushed to [`feature/federation-security-foundation`](https://github.com/MyZubster-Ecosystem/myzubster/tree/feature/federation-security-foundation).
+## 🤝 What I'm building with Daniel Ioni — MyZubster
 
-**Status:** feature-branch security foundation under review; not a claim of a completed federated production deployment or a security audit.
+Alongside my own N4K48 work, I collaborate with **Daniel Ioni** on **MyZubster** through practical software tests, technical documentation and contributions toward decentralized, federated infrastructure.
+
+One recent contribution is the experimental [federation security foundation](https://github.com/MyZubster-Ecosystem/myzubster/tree/feature/federation-security-foundation): Ed25519-signed evidence validation, timestamp and schema checks, and MongoDB-backed nonce replay protection. The local checkpoint reported **28 passing Jest tests**, and commit [`0de1cdd2`](https://github.com/MyZubster-Ecosystem/myzubster/commit/0de1cdd2) was pushed to the feature branch.
+
+**Status:** development and testing work, not a claim that MyZubster is fully decentralized or that this feature is deployed to production.
 
 ## 👋 About me
 
